@@ -1,0 +1,13 @@
+.headerfullContainer {
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        .loglogo {
+            width: 170px;
+            height: 50px;
+        }
+        .navigationBar {
+            display: flex;
+        }
+    }
+}
