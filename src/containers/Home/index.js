@@ -1,6 +1,7 @@
 import React from 'react'
 import {
-  NavBarComponent 
+  NavBarComponent,
+  BannerComponent
 } from '../../components'
 import './homeStyle.scss'
 
@@ -8,7 +9,7 @@ const HomeContainer = () => {
   return (
     <div>
       <NavBarComponent />
-      HomeContainer
+      <BannerComponent />
     </div>
   )
 }

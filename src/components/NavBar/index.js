@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navBarStyle.scss'
 import '../../commonStyle/Style.scss'
 import Logo from '../../assets/logo.png'
@@ -15,38 +15,38 @@ const NavBarComponent = () => {
 
           <div className="navigationBar">
             <div className="navItem">
-              <Link to='/'>
-                <p>Home</p>
+              <Link to='/' >
+                Home
               </Link>
             </div>
             <div className="navItem">
-              <Link to='/aboutUs'>
-                <p>About Us</p>
+              <Link to='/aboutUs' >
+                About Us
               </Link>
             </div>
             <div className="navItem">
-              <Link to='/'>
-                <p>Shop</p>
+              <Link to='/' >
+                Shop
               </Link>
             </div>
             <div className="navItem">
-              <Link to='/'>
-                <p>Blog</p>
+              <Link to='/' >
+                Blog
               </Link>
             </div>
             <div className="navItem">
-              <Link to='/'>
-                <p>Contact Us</p>
+              <Link to='/' >
+                Contact Us
               </Link>
             </div>
             <div className="navItem">
-              <Link to='/'>
-                <p>Icon</p>
+              <Link to='/' >
+                Icon
               </Link>
             </div>
             <div className="navItem">
-              <Link to='/'>
-                <p>Icon</p>
+              <Link to='/' >
+                Icon
               </Link>
             </div>
           </div>
