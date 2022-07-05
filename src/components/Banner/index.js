@@ -1,26 +1,43 @@
-import { Row, Col } from 'antd'
 import React from 'react'
+// import { Row, Col } from 'antd'
 import './bannerStyle.scss'
+// import {  } from 'antd';
+import { Col, Row, DatePicker, Space } from 'antd';
 
 const BannerComponent = () => {
+
     return (
+
         <div className="bannerContainer">
             <div className="myContainer">
                 <Row>
-                    <Col span={9}>
-                        <h1>
-                            tst col 9
-                        </h1>
+                    <Col span={10}>
+                        <div className="bannerTextContainer">
+                            <h3>
+                                Painting is by
+                            </h3>
+                            <h5>
+                                Nature a luminous
+                            </h5>
+                            <h3>
+                                Language
+                            </h3>
+                            <button>
+                                Contact Now
+                            </button>
+                        </div>
                     </Col>
                     <Col span={14}>
-                        <h1>
-                            tst col 15
-                        </h1>
+                        <div className="bannerImageContainer">
+                            <div className="bannerSlid1">
+                                <img src="https://designprosusa.com/themes/PaintingArt/assets/images/homeOne.png" 
+                                    alt="Banner Image" 
+                                    width='100%' 
+                                    height='100%' 
+                                />
+                            </div>
+                        </div>
                     </Col>
-                </Row>
-                <Row>
-                    <Col span={12}>col-12</Col>
-                    <Col span={12}>col-12</Col>
                 </Row>
             </div>
         </div>
