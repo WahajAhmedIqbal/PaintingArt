@@ -1,8 +1,10 @@
 import React from 'react'
-// import { Row, Col } from 'antd'
+
+import { Col, Row, } from 'antd';
+
 import './bannerStyle.scss'
-// import {  } from 'antd';
-import { Col, Row, DatePicker, Space } from 'antd';
+
+// import BannerImageOne from ''
 
 const BannerComponent = () => {
 
@@ -30,8 +32,9 @@ const BannerComponent = () => {
                     <Col span={14}>
                         <div className="bannerImageContainer">
                             <div className="bannerSlid1">
-                                <img src="https://designprosusa.com/themes/PaintingArt/assets/images/homeOne.png" 
-                                    alt="Banner Image" 
+                                
+                                <img src='https://designprosusa.com/themes/PaintingArt/assets/images/homeOne.png' 
+                                    alt="BannerImage" 
                                     width='100%' 
                                     height='100%' 
                                 />

@@ -1,8 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {
-  NavBarComponent 
-} from '../../components'
 
 const PageNotFoundContainer = () => {
   return (

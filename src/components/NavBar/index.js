@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './navBarStyle.scss'
 import '../../commonStyle/Style.scss'
 import Logo from '../../assets/logo.png'
@@ -10,7 +10,7 @@ const NavBarComponent = () => {
       <div className="myContainer">
         <div className="headerContainer">
           <div className="loglogo">
-            <img src={Logo} width="100%" height="100%" />
+            <img src={Logo} alt="Logo" width="100%" height="100%" />
           </div>
 
           <div className="navigationBar">

@@ -1,7 +1,11 @@
 import React from 'react'
+
 import Routers from './routers'
+
+import 'antd/dist/antd.less'; 
+import 'antd/dist/antd.css'
+
 import './commonStyle/Style.scss'
-import 'antd/dist/antd.css'; 
 
 const App = () => {
   return (
