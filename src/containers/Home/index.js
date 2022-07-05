@@ -1,7 +1,8 @@
 import React from 'react'
 import {
   NavBarComponent,
-  BannerComponent
+  BannerComponent,
+  CategoriesCompoenet
 } from '../../components'
 import './homeStyle.scss'
 
@@ -10,6 +11,7 @@ const HomeContainer = () => {
     <div>
       <NavBarComponent />
       <BannerComponent />
+      <CategoriesCompoenet />
     </div>
   )
 }
