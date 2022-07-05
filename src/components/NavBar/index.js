@@ -1,12 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './navBarStyle.scss'
 import '../../commonStyle/Style.scss'
 import Logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 
 const NavBarComponent = () => {
+  const [colorChangeNav, setColorChangeNav] = useState(false);
+
+  const changeNavBar = () => {
+   if(window.scrollY >= 80){
+       setColorChangeNav(true);
+     }
+     else{
+       setColorChangeNav(false);
+     }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNavBar)
+  }, []);
+
   return (
-    <section className='headerfullContainer'>
+    <section className={colorChangeNav ? 'navBgclr headerfullContainer' : 'headerfullContainer'}>
       <div className="myContainer">
         <div className="headerContainer">
           <div className="loglogo">

@@ -1,0 +1,19 @@
+@import '../../commonStyle/Style.scss';
+
+.mybutton {
+    .btnlink {
+        border: none;
+        font-size: 14px;
+        color: #000000;
+        background-color: $color3;
+        padding: 12px 30px;
+        font-family: Montserrat-Regular;
+        outline: none;
+        transition: 0.5s all ease-in-out;
+            margin: 10px 0;
+    }
+    .btnlink:hover {
+        color: #ffffff;
+        background-color: $color2;
+    }
+}

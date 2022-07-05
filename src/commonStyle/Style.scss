@@ -1,8 +1,26 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../assets/fontFamily/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../assets/fontFamily/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Granite;
+    src: url(../assets/fontFamily/Granite.ttf);
+}
 body{
     margin: 0;
-    padding: 0 
+    padding: 0;
 }
 
 .myContainer {
     margin: 0 70px;
+    font-family: Montserrat-Regular;
 }
+
+// Defalut Colors
+$color1 : #caf4ff;
+$color2 : #25b8ae;
+$color3 : #9cd6ea

@@ -1,3 +1,53 @@
+@import "../../commonStyle/Style.scss";
 .bannerContainer {
-    
+    height: 670px;
+    .bannerRow {
+        display: flex;
+        align-items: center;
+    }
+    .bannerImageContainer {
+        display: flex;
+        height: 670px;
+        position: relative;
+        .bannerSlid1 {
+            position: absolute;
+            left: 84px;
+            top: 0;
+            bottom: 0;
+        }
+        .bannerSlid2 {
+            position: absolute;
+            left: 265px;
+            top: 0;
+            bottom: 0;
+        }
+        .bannerSlid3 {
+            position: absolute;
+            right: 35px;
+            top: 0;
+            bottom: 0;
+        }
+        .bannerSlid4 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+    }
+    .bannerTextContainer {
+        margin-left: 70px;
+        h3 {
+            color: #000000;
+            font-family: Montserrat-Bold;
+            line-height: 80px;
+            font-size: 60px;
+            h5 {
+                color: $color2;
+                font-family: Granite;
+                font-size: 70px;
+                text-shadow: 1px 1px 1px #333333;
+            }
+        }
+    }
 }

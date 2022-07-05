@@ -1,7 +1,10 @@
+@import '../../commonStyle/Style.scss';
 .headerfullContainer {
     width: 100%;
-    // height: 95px;
     background-color: #ffffff8c;
+    position: fixed;
+    z-index: 10;
+    transition: .5s all ease-in-out;
     .headerContainer {
         display: flex;
         justify-content: space-between;
@@ -18,10 +21,10 @@
                 a {
                     color: #000;
                     text-decoration: none;
-                    font-size: 18px;
+                    font-size: 17px;
                 }
                 a:hover{
-                    color: #25b8ae;
+                    color: $color2;
                 }
                 .bgWhite {
                     color: antiquewhite;
@@ -29,4 +32,9 @@
             }
         }
     }
+}
+.navBgclr {
+    background-color: #caf4ff;
+    transition: .5s all ease-in-out;
+
 }
