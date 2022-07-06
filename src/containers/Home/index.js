@@ -2,7 +2,9 @@ import React from 'react'
 import {
   NavBarComponent,
   BannerComponent,
-  CategoriesCompoenet
+  CategoriesCompoenet,
+  AboutUsComponent,
+  FooterComponent
 } from '../../components'
 import './homeStyle.scss'
 
@@ -12,6 +14,8 @@ const HomeContainer = () => {
       <NavBarComponent />
       <BannerComponent />
       <CategoriesCompoenet />
+      <AboutUsComponent />
+      <FooterComponent />
     </div>
   )
 }
