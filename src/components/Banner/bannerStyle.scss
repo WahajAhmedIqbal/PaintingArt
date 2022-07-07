@@ -11,19 +11,19 @@
         position: relative;
         .bannerSlid1 {
             position: absolute;
-            left: 84px;
+            left: 56px;
             top: 0;
             bottom: 0;
         }
         .bannerSlid2 {
             position: absolute;
-            left: 265px;
+            left: 245px;
             top: 0;
             bottom: 0;
         }
         .bannerSlid3 {
             position: absolute;
-            right: 35px;
+            right: 40px;
             top: 0;
             bottom: 0;
         }
@@ -33,7 +33,6 @@
             top: 0;
             bottom: 0;
         }
-
     }
     .bannerTextContainer {
         margin-left: 70px;
@@ -42,7 +41,9 @@
             font-family: Montserrat-Bold;
             line-height: 80px;
             font-size: 60px;
-            h5 {
+            display: flex;
+            flex-direction: column;
+            span {
                 color: $color2;
                 font-family: Granite;
                 font-size: 70px;

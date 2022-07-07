@@ -21,9 +21,11 @@ const BannerComponent = () => {
                     <div className="bannerTextContainer">
                         <h3>
                             Painting is by
-                            <h5>
+                            {/* <h5> */}
+                            <span>
                                 Nature a luminous
-                            </h5>
+                            </span>
+                            {/* </h5> */}
                             Language
                         </h3>
 

@@ -4,8 +4,12 @@ import {
   BannerComponent,
   CategoriesCompoenet,
   AboutUsComponent,
-  FooterComponent
-} from '../../components'
+  ShopCompoenent,
+  BlogComponent,
+  SubcribeComponent,
+  FooterComponent,
+
+} from "../../components";
 import './homeStyle.scss'
 
 const HomeContainer = () => {
@@ -15,6 +19,9 @@ const HomeContainer = () => {
       <BannerComponent />
       <CategoriesCompoenet />
       <AboutUsComponent />
+      <ShopCompoenent />
+      <BlogComponent />
+      <SubcribeComponent />
       <FooterComponent />
     </div>
   )

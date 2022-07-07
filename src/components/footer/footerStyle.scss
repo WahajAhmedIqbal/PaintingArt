@@ -1,5 +1,26 @@
-@import '../../commonStyle/Style.scss';
+@import "../../commonStyle/Style.scss";
 .footerContainer {
-    background-color: $color3;
-    padding-top: 3rem;
+    background-color: $color1;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    .footerbox {
+        .footerLogo {
+            width: 200px;
+        }
+    }
+    .footerContent {
+        h5 {
+            font-family: "Montserrat-Bold";
+            color: $color4;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        p {
+            margin: 0;
+            a {
+                color: $color4;
+                font-size: 13px;
+            }
+        }
+    }
 }

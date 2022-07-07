@@ -1,0 +1,53 @@
+@import "../../commonStyle/Style.scss";
+
+.blogContainer {
+    text-align: center;
+    padding: 3rem 0;
+    position: relative;
+    .bgimageblog {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0
+    }
+    .blogHeading {
+        h1 {
+            color: $color2;
+            font-family: Granite;
+            font-size: 45px;
+            position: relative;
+        }
+    }
+    .blogCard {
+        height: 725px;
+        position: relative;
+        .bolgCardImage {
+            height: 475px;
+        }
+        .blogCardContent {
+            padding: 1rem 1.5rem 2rem;
+            border: 4px solid $color1;
+            border-top: none;
+            h3 {
+                font-size: 30px;
+                color: $color2;
+                font-family: Montserrat-Bold;
+                margin-bottom: 0;
+            }
+            h5 {
+                font-size: 25px;
+                color: $color2;
+                font-family: Montserrat-Regular;
+            }
+            p {
+                color: $color4;
+                font-family: Montserrat-Regular;
+                font-size: 15px;
+            }
+        }
+    }
+    .blogLoadMore {
+        margin: 4rem 0 2rem;
+    }
+}
