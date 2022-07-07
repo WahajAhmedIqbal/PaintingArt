@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Row, Col } from 'antd'
+import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 
 import { Link } from 'react-router-dom'
 
@@ -66,8 +67,16 @@ const ShopCompoenent = () => {
                   <div className="productPrice">
                     <p>{item.product_Price}</p>
                     <div className="cardIcon">
-                      <div className="icon1">Icon</div>
-                      <div className="icon2">icon2</div>
+                      <div className="icon1">
+                        <Link to="../../containers/PageNotFound">
+                          <ShoppingCartOutlined />
+                        </Link>
+                      </div>
+                      <div className="icon2">
+                        <Link to="../../containers/PageNotFound">
+                          <HeartOutlined />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -76,7 +85,10 @@ const ShopCompoenent = () => {
           ))}
         </Row>
         <div className="showNowButton">
-          <ButtonComponent pageLink="../../containers/PageNotFound" buttonText="Shop Now" />
+          <ButtonComponent
+            pageLink="../../containers/PageNotFound"
+            buttonText="Shop Now"
+          />
         </div>
       </div>
     </div>

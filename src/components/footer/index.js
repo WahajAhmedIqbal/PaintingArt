@@ -1,6 +1,8 @@
 import React from "react";
 
 import { Col, Row } from "antd";
+import { FacebookFilled, InstagramOutlined } from "@ant-design/icons";
+
 import { Link } from "react-router-dom";
 
 import FooterLogo from "../../assets/logo.png";
@@ -20,8 +22,16 @@ const FooterComponent = () => {
                 </Link>
               </div>
               <div className="footerIcon">
-                <div className="icon1">icon1</div>
-                <div className="icon2">icon2</div>
+                <div className="icon1">
+                  <Link to="https://www.facebook.com/" target="_blank">
+                    <FacebookFilled />
+                  </Link>
+                </div>
+                <div className="icon2">
+                  <Link to="" target="_blank">
+                    <InstagramOutlined />
+                  </Link>
+                </div>
               </div>
             </div>
           </Col>
@@ -61,10 +71,20 @@ const FooterComponent = () => {
               <h5>Payment Method</h5>
               <div className="paymentbox">
                 <div className="icon1">
-                    Icon
+                  <img
+                    src="https://designprosusa.com/themes/PaintingArt/assets/images/visaIcon.png"
+                    alt="VisaCard"
+                    width="100%"
+                    height="100%"
+                  />
                 </div>
                 <div className="icon2">
-                    Icon
+                  <img
+                    src="https://designprosusa.com/themes/PaintingArt/assets/images/paypalIcon.png"
+                    alt="Paypal"
+                    width='100%'
+                    height='100%'
+                  />
                 </div>
               </div>
             </div>

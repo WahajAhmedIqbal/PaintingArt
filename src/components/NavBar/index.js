@@ -4,6 +4,11 @@ import '../../commonStyle/Style.scss'
 import Logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 
+import { 
+    HeartOutlined,
+    ShoppingCartOutlined 
+  } from "@ant-design/icons";
+
 const NavBarComponent = () => {
   const [colorChangeNav, setColorChangeNav] = useState(false);
 
@@ -21,7 +26,11 @@ const NavBarComponent = () => {
   }, []);
 
   return (
-    <section className={colorChangeNav ? 'navBgclr headerfullContainer' : 'headerfullContainer'}>
+    <section
+      className={
+        colorChangeNav ? "navBgclr headerfullContainer" : "headerfullContainer"
+      }
+    >
       <div className="myContainer">
         <div className="headerContainer">
           <div className="loglogo">
@@ -30,45 +39,35 @@ const NavBarComponent = () => {
 
           <div className="navigationBar">
             <div className="navItem">
-              <Link to='/' >
-                Home
+              <Link to="/">Home</Link>
+            </div>
+            <div className="navItem">
+              <Link to="/aboutUs">About Us</Link>
+            </div>
+            <div className="navItem">
+              <Link to="/">Shop</Link>
+            </div>
+            <div className="navItem">
+              <Link to="/">Blog</Link>
+            </div>
+            <div className="navItem">
+              <Link to="/">Contact Us</Link>
+            </div>
+            <div className="navItem">
+              <Link to="/">
+                <HeartOutlined />
               </Link>
             </div>
             <div className="navItem">
-              <Link to='/aboutUs' >
-                About Us
-              </Link>
-            </div>
-            <div className="navItem">
-              <Link to='/' >
-                Shop
-              </Link>
-            </div>
-            <div className="navItem">
-              <Link to='/' >
-                Blog
-              </Link>
-            </div>
-            <div className="navItem">
-              <Link to='/' >
-                Contact Us
-              </Link>
-            </div>
-            <div className="navItem">
-              <Link to='/' >
-                Icon
-              </Link>
-            </div>
-            <div className="navItem">
-              <Link to='/' >
-                Icon
+              <Link to="/">
+                <ShoppingCartOutlined />
               </Link>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default NavBarComponent

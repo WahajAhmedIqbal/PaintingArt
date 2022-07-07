@@ -7,6 +7,9 @@
         .footerLogo {
             width: 200px;
         }
+        .footerIcon {
+          display: flex  
+        };
     }
     .footerContent {
         h5 {
@@ -21,6 +24,10 @@
                 color: $color4;
                 font-size: 13px;
             }
+        }
+        
+        .paymentbox {
+            display: flex;
         }
     }
 }

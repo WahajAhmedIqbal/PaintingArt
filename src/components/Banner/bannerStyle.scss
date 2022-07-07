@@ -52,3 +52,70 @@
         }
     }
 }
+
+// responsive
+//  2560
+@media only screen and (max-width: 2560px) {
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                left: 725px;
+            }
+            .bannerSlid2 {
+                left: 911px;
+            }
+        }
+    }
+}
+// 1920
+@media only screen and (max-width: 1920px) {
+        .bannerContainer {
+            .bannerImageContainer {
+                .bannerSlid1 {
+                    left: 349px;
+                }
+                .bannerSlid2 {
+                    left: 536px;
+                }
+            }
+        }
+}
+// 1600
+@media only screen and (max-width: 1600px) {
+        .bannerContainer {
+            .bannerImageContainer {
+                .bannerSlid1 {
+                    left: 165px;
+                }
+                .bannerSlid2 {
+                    left: 350px;
+                }
+            }
+        }
+}
+// 1440
+@media only screen and (max-width: 1440px) {
+        .bannerContainer {
+            .bannerImageContainer {
+                .bannerSlid1 {
+                    left: 56px;
+                }
+                .bannerSlid2 {
+                    left: 245px;
+                }
+            }
+        }
+}
+// 1366
+@media only screen and (max-width: 1366px) {
+        .bannerContainer {
+            .bannerImageContainer {
+                .bannerSlid1 {
+                    left: 28px;
+                }
+                .bannerSlid2 {
+                    left: 213px;
+                }
+            }
+        }
+}
