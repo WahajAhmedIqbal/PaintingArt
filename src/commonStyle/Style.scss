@@ -14,7 +14,7 @@
     font-family: Granite;
     src: url(../assets/fontFamily/Granite.ttf);
 }
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -25,8 +25,16 @@ body{
 }
 
 // Defalut Colors
-$color1 : #caf4ff;
-$color2 : #25b8ae;
-$color3 : #9cd6ea;
-$color4 : #333333;
-$color5 : #f2f2f2;
+$color1: #caf4ff;
+$color2: #25b8ae;
+$color3: #9cd6ea;
+$color4: #333333;
+$color5: #f2f2f2;
+
+// 820
+@media only screen and (max-width: 820px) {
+    .myContainer {
+        margin: 0 30px;
+        font-family: Montserrat-Regular;
+    }
+}

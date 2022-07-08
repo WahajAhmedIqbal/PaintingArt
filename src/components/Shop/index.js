@@ -49,7 +49,7 @@ const ShopCompoenent = () => {
         <h3>Shop</h3>
         <Row gutter={16}>
           {cardsDetails.map((item) => (
-            <Col span={6} key={item.id}>
+            <Col span={6} xl={6} lg={6} md={7} sm={12} xs={24} key={item.id}>
               <div className="shopCardContainer">
                 <div className="cardImage">
                   <Link to="../../containers/PageNotFound">

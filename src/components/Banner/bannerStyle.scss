@@ -69,53 +69,194 @@
 }
 // 1920
 @media only screen and (max-width: 1920px) {
-        .bannerContainer {
-            .bannerImageContainer {
-                .bannerSlid1 {
-                    left: 349px;
-                }
-                .bannerSlid2 {
-                    left: 536px;
-                }
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                left: 349px;
+            }
+            .bannerSlid2 {
+                left: 536px;
             }
         }
+    }
 }
 // 1600
 @media only screen and (max-width: 1600px) {
-        .bannerContainer {
-            .bannerImageContainer {
-                .bannerSlid1 {
-                    left: 165px;
-                }
-                .bannerSlid2 {
-                    left: 350px;
-                }
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                left: 165px;
+            }
+            .bannerSlid2 {
+                left: 350px;
             }
         }
+    }
 }
 // 1440
 @media only screen and (max-width: 1440px) {
-        .bannerContainer {
-            .bannerImageContainer {
-                .bannerSlid1 {
-                    left: 56px;
-                }
-                .bannerSlid2 {
-                    left: 245px;
-                }
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                left: 56px;
+            }
+            .bannerSlid2 {
+                left: 245px;
             }
         }
+    }
 }
 // 1366
 @media only screen and (max-width: 1366px) {
-        .bannerContainer {
-            .bannerImageContainer {
-                .bannerSlid1 {
-                    left: 28px;
-                }
-                .bannerSlid2 {
-                    left: 213px;
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                left: 28px;
+            }
+            .bannerSlid2 {
+                left: 213px;
+            }
+        }
+    }
+}
+
+// 1024
+@media only screen and (max-width: 1024px) {
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                position: absolute;
+                left: -172px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .bannerSlid2 {
+                position: absolute;
+                left: 12px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+        .bannerTextContainer {
+            h3 {
+                line-height: 65px;
+                font-size: 45px;
+                span {
+                    font-size: 50px;
                 }
             }
         }
+    }
+}
+
+// 820
+@media only screen and (max-width: 820px) {
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                position: absolute;
+                left: -291px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .bannerSlid2 {
+                position: absolute;
+                left: -107px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+        .bannerTextContainer {
+            h3 {
+                line-height: 62px;
+                font-size: 31px;
+                z-index: 1;
+                span {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+// 768
+@media only screen and (max-width: 768px) {
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                position: absolute;
+                left: -325px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .bannerSlid2 {
+                position: absolute;
+                left: -138px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+        .bannerTextContainer {
+            h3 {
+                line-height: 62px;
+                font-size: 31px;
+                z-index: 1;
+                span {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+// 600
+@media only screen and (max-width: 600px) {
+    .bannerContainer {
+        .bannerImageContainer {
+            .bannerSlid1 {
+                position: absolute;
+                left: -675px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .bannerSlid2 {
+                position: absolute;
+                left: -487px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .bannerSlid3 {
+                position: absolute;
+                left: -303px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .bannerSlid4 {
+                position: absolute;
+                left: -116px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+        .bannerTextContainer {
+            h3 {
+                line-height: 62px;
+                font-size: 31px;
+                z-index: 1;
+                span {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
 }

@@ -38,11 +38,11 @@ const BlogComponent = () => {
   return (
     <div className="blogContainer">
       <img
-        className='bgimageblog'
+        className="bgimageblog"
         src="https://designprosusa.com/themes/PaintingArt/assets/images/blogCover.png"
         alt="bgImage"
-        width='100%'
-        height='100%'
+        width="100%"
+        height="100%"
       />
       <div className="myContainer">
         <div className="blogHeading">
@@ -51,7 +51,7 @@ const BlogComponent = () => {
         <div className="blogCardsContainer">
           <Row gutter={16}>
             {blogCardsDetails.map((blog) => (
-              <Col span={8}>
+              <Col span={8} xl={6} lg={6} md={7} sm={12} xs={24} key={blog.id}>
                 <div className="blogCard">
                   <div className="bolgCardImage">
                     <img

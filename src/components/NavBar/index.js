@@ -11,6 +11,7 @@ import {
 
 const NavBarComponent = () => {
   const [colorChangeNav, setColorChangeNav] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   const changeNavBar = () => {
    if(window.scrollY >= 80){
@@ -25,7 +26,10 @@ const NavBarComponent = () => {
     window.addEventListener('scroll', changeNavBar)
   }, []);
 
-  const 
+  const navIcon = () => {
+    setToggleMenu(!toggleMenu);
+    console.log('-->',toggleMenu);
+  }
 
   return (
     <section
@@ -39,7 +43,7 @@ const NavBarComponent = () => {
             <img src={Logo} alt="Logo" width="100%" height="100%" />
           </div>
 
-          {/* <div className="navigationBar">
+          <div className="navigationBar">
             <div className="navItem">
               <Link to="/">Home</Link>
             </div>
@@ -65,12 +69,49 @@ const NavBarComponent = () => {
                 <ShoppingCartOutlined />
               </Link>
             </div>
-          </div> */}
+          </div>
 
-          <div id="nav-icon1" onClick={navIcon}>
+          <div
+            id="nav-icon1"
+            className={toggleMenu ? "open" : null}
+            onClick={navIcon}
+          >
             <span></span>
             <span></span>
             <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div className={toggleMenu ? "sideNavShow sideBarContainer" : 'sideBarContainer'} >
+        <div className="sideNavLogo">
+          {/* <img src={Logo} alt="Logo" width="100%" height="100%" /> */}
+        </div>
+        <div className="SideNavigationBar">
+          <div className="navItem">
+            <Link to="/">Home</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/aboutUs">About Us</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/">Shop</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/">Blog</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/">Contact Us</Link>
+          </div>
+          <div className="navItem">
+            <Link to="/">
+              <HeartOutlined />
+            </Link>
+            <div className="navItem">
+              <Link to="/">
+                <ShoppingCartOutlined />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
