@@ -25,6 +25,8 @@ const NavBarComponent = () => {
     window.addEventListener('scroll', changeNavBar)
   }, []);
 
+  const 
+
   return (
     <section
       className={
@@ -37,7 +39,7 @@ const NavBarComponent = () => {
             <img src={Logo} alt="Logo" width="100%" height="100%" />
           </div>
 
-          <div className="navigationBar">
+          {/* <div className="navigationBar">
             <div className="navItem">
               <Link to="/">Home</Link>
             </div>
@@ -63,6 +65,12 @@ const NavBarComponent = () => {
                 <ShoppingCartOutlined />
               </Link>
             </div>
+          </div> */}
+
+          <div id="nav-icon1" onClick={navIcon}>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>

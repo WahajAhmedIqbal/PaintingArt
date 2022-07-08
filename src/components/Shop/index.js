@@ -40,6 +40,7 @@ const ShopCompoenent = () => {
       product_Name: "Painting",
       product_Price: "300",
     },
+    
   ];
 
   return (
