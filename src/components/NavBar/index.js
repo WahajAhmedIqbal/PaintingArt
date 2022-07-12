@@ -51,7 +51,7 @@ const NavBarComponent = () => {
               <Link to="/aboutUs">About Us</Link>
             </div>
             <div className="navItem">
-              <Link to="/">Shop</Link>
+              <Link to="/Shop">Shop</Link>
             </div>
             <div className="navItem">
               <Link to="/">Blog</Link>
@@ -83,7 +83,11 @@ const NavBarComponent = () => {
         </div>
       </div>
 
-      <div className={toggleMenu ? "sideNavShow sideBarContainer" : 'sideBarContainer'} >
+      <div
+        className={
+          toggleMenu ? "sideNavShow sideBarContainer" : "sideBarContainer"
+        }
+      >
         <div className="sideNavLogo">
           {/* <img src={Logo} alt="Logo" width="100%" height="100%" /> */}
         </div>

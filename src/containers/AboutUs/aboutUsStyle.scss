@@ -1,0 +1,30 @@
+@import "../../commonStyle/Style.scss";
+
+.aboutUsSection {
+    margin: 5rem 0;
+    .aboutUstxtCon {
+        padding: 3rem 0;
+        h3 {
+            font-family: Montserrat-Bold;
+            font-size: 25px;
+        }
+        p {
+            font-family: Montserrat-Regular;
+            line-height: 2;
+            font-size: 16px;
+            color: #666666;
+        }
+    }
+    .abttext {
+        margin: 2rem 0;
+        h3 {
+            font-family: Montserrat-Bold;
+            font-size: 25px;
+        }
+        p {
+            font-family: Montserrat-Regular;
+            font-size: 16px;
+            color: #666666;
+        }
+    }
+}

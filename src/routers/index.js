@@ -5,19 +5,23 @@ import {
     Routes
 } from 'react-router-dom'
 import {
-    HomeContainer, 
-    PageNotFoundContainer
-} from '../containers'
+  HomeContainer,
+  AboutUsContainer,
+  PageNotFoundContainer,
+  ShopContainer,
+} from "../containers";
 
 const Routers = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<HomeContainer />} />
-                <Route path='*' element={<PageNotFoundContainer/> } />
-            </Routes>
-        </BrowserRouter>
-    )
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeContainer />} />
+          <Route path="/aboutUs" element={<AboutUsContainer />} />
+          <Route path="/Shop" element={<ShopContainer />} />
+          <Route path="*" element={<PageNotFoundContainer />} />
+        </Routes>
+      </BrowserRouter>
+    );
 }
-
+ 
 export default Routers

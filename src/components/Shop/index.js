@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { ButtonComponent } from '../'
 
 import './shopStyle.scss'
+import ShopCardInner from '../ShopCardInner';
 
 const ShopCompoenent = () => {
 
@@ -50,7 +51,12 @@ const ShopCompoenent = () => {
         <Row gutter={16}>
           {cardsDetails.map((item) => (
             <Col span={6} xl={6} lg={6} md={7} sm={12} xs={24} key={item.id}>
-              <div className="shopCardContainer">
+              <ShopCardInner 
+                image={item.image} 
+                product_Name={item.product_Name} 
+                product_Price={item.product_Price}
+              />
+              {/* <div className="shopCardContainer">
                 <div className="cardImage">
                   <Link to="../../containers/PageNotFound">
                     <img
@@ -81,7 +87,7 @@ const ShopCompoenent = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Col>
           ))}
         </Row>

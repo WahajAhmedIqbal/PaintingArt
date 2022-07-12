@@ -11,7 +11,8 @@ const BlogComponent = () => {
   const blogCardsDetails = [
     {
       id: 1,
-      image: "https://designprosusa.com/themes/PaintingArt/assets/images/blogOne.png",
+      image:
+        "https://designprosusa.com/themes/PaintingArt/assets/images/blogOne.png",
       blog_Name: "blog",
       blog_date: "9/4/40",
       blog_blog:
@@ -19,7 +20,8 @@ const BlogComponent = () => {
     },
     {
       id: 2,
-      image: "https://designprosusa.com/themes/PaintingArt/assets/images/blogTwo.png",
+      image:
+        "https://designprosusa.com/themes/PaintingArt/assets/images/blogTwo.png",
       blog_Name: "blog 3",
       blog_date: "29/5/40",
       blog_blog:
@@ -27,7 +29,8 @@ const BlogComponent = () => {
     },
     {
       id: 3,
-      image: "https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png",
+      image:
+        "https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png",
       blog_Name: "blog 2",
       blog_date: "1/1/20",
       blog_blog:
@@ -51,7 +54,7 @@ const BlogComponent = () => {
         <div className="blogCardsContainer">
           <Row gutter={16}>
             {blogCardsDetails.map((blog) => (
-              <Col span={8} xl={6} lg={6} md={7} sm={12} xs={24} key={blog.id}>
+              <Col span={8} xl={8} lg={8} md={12} sm={12} xs={24} key={blog.id}>
                 <div className="blogCard">
                   <div className="bolgCardImage">
                     <img
@@ -70,7 +73,7 @@ const BlogComponent = () => {
                       buttonText="Read More"
                     />
                   </div>
-                </div>
+                </div> 
               </Col>
             ))}
           </Row>

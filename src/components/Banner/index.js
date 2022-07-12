@@ -11,21 +11,24 @@ import {
 
 // import BannerImageOne from ''
 
-const BannerComponent = () => {
+const BannerComponent = (props) => {
 
 
     return (
       <div className="bannerContainer ">
         <Row className="bannerRow">
-          <Col span={10} xl={10} lg={10} md={10} sm={20} xs={20} >
+          <Col span={10} xl={10} lg={10} md={10} sm={20} xs={20}>
             <div className="bannerTextContainer">
               <h3>
-                Painting is by
-                {/* <h5> */}
-                <span>Nature a luminous</span>
-                {/* </h5> */}
-                Language
+                {props.bannerText}
+                <span>{props.bannerText2}</span>
+                {props.bannerText3}
               </h3>
+              {/* <h3>
+                Painting is by
+                <span>Nature a luminous</span>
+                
+              </h3> */}
 
               <ButtonComponent
                 pageLink="../../containers/PageNotFound"
@@ -37,7 +40,7 @@ const BannerComponent = () => {
             <div className="bannerImageContainer">
               <div className="bannerSlid1">
                 <img
-                  src="https://designprosusa.com/themes/PaintingArt/assets/images/homeOne.png"
+                  src={props.bannerSlide1}
                   alt="BannerImage"
                   width="100%"
                   height="100%"
@@ -45,7 +48,7 @@ const BannerComponent = () => {
               </div>
               <div className="bannerSlid2">
                 <img
-                  src="https://designprosusa.com/themes/PaintingArt/assets/images/homeTwo.png"
+                  src={props.bannerSlide2}
                   alt="BannerImage"
                   width="100%"
                   height="100%"
@@ -53,7 +56,7 @@ const BannerComponent = () => {
               </div>
               <div className="bannerSlid3">
                 <img
-                  src="https://designprosusa.com/themes/PaintingArt/assets/images/homeThree.png"
+                  src={props.bannerSlide3}
                   alt="BannerImage"
                   width="100%"
                   height="100%"
@@ -61,7 +64,7 @@ const BannerComponent = () => {
               </div>
               <div className="bannerSlid4">
                 <img
-                  src="https://designprosusa.com/themes/PaintingArt/assets/images/homeFour.png"
+                  src={props.bannerSlide4}
                   alt="BannerImage"
                   width="100%"
                   height="100%"

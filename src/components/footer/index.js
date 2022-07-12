@@ -14,7 +14,7 @@ const FooterComponent = () => {
     <div className="footerContainer">
       <div className="myContainer">
         <Row>
-          <Col span={6}>
+          <Col span={6} md>
             <div className="footerbox">
               <div className="footerLogo">
                 <Link to="/">

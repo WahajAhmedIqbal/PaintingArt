@@ -6,6 +6,7 @@ import _AboutUsComponent from './aboutUs'
 import _ShopCompoenent from './Shop'
 import _BlogComponent from './Bolg'
 import _SubcribeComponent from './Subcribe'
+import _ShopCardInner from "./ShopCardInner";
 import _FooterComponent from './footer'
 
 
@@ -17,4 +18,5 @@ export const AboutUsComponent = _AboutUsComponent
 export const ShopCompoenent = _ShopCompoenent;
 export const FooterComponent = _FooterComponent
 export const BlogComponent = _BlogComponent;
+export const ShopCardInner = _ShopCardInner;
 export const SubcribeComponent = _SubcribeComponent;
