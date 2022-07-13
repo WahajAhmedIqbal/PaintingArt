@@ -56,38 +56,6 @@ const ShopCompoenent = () => {
                 product_Name={item.product_Name} 
                 product_Price={item.product_Price}
               />
-              {/* <div className="shopCardContainer">
-                <div className="cardImage">
-                  <Link to="../../containers/PageNotFound">
-                    <img
-                      src={item.image}
-                      alt="ProductImage"
-                      width="100%"
-                      height="100%"
-                    />
-                  </Link>
-                </div>
-                <div className="cardContent">
-                  <div className="productName">
-                    <h4>{item.product_Name}</h4>
-                  </div>
-                  <div className="productPrice">
-                    <p>{item.product_Price}</p>
-                    <div className="cardIcon">
-                      <div className="icon1">
-                        <Link to="../../containers/PageNotFound">
-                          <ShoppingCartOutlined />
-                        </Link>
-                      </div>
-                      <div className="icon2">
-                        <Link to="../../containers/PageNotFound">
-                          <HeartOutlined />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </Col>
           ))}
         </Row>

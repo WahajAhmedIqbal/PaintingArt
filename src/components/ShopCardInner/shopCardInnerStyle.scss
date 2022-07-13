@@ -1,36 +1,49 @@
 @import "../../commonStyle/Style.scss";
 
 .shopCardContainer {
-        height: 450px;
-        width: 100%;
-        margin: 20px 0;
-        .cardImage {
-            height: 360px;
-        }
-        .cardContent {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 4px solid $color1;
-            border-top: none;
-            padding: 5px 10px;
-            .productName {
-                h4 {
-                    color: $color2;
-                    font-family: Montserrat-Regular;
-                    font-size: 18px;
-                }
+    height: 450px;
+    width: 100%;
+    margin: 20px 0;
+    .cardImage {
+        height: 360px;
+    }
+    .cardContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 4px solid $color1;
+        border-top: none;
+        padding: 5px 10px;
+        .productName {
+            h4 {
+                color: $color2;
+                font-family: Montserrat-Regular;
+                font-size: 18px;
             }
-            .productPrice {
-                p {
-                    color: $color2;
-                    font-family: Montserrat-Bold;
-                    font-size: 18px;
-                    margin-bottom: 0px;
+        }
+        .productPrice {
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+            p {
+                color: $color2;
+                font-family: Montserrat-Bold;
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+            .cardIcon {
+                display: flex;
+                .icon1 a .shopingCart {
+                    font-size: 25px;
+                    margin: 0 5px;
+                    color: #25b8ae;
                 }
-                .cardIcon {
-                    display: flex;
+                .icon2 a .shopingCart {
+                    font-size: 25px;
+                    margin: 0 5px;
+                    color: #25b8ae;
                 }
             }
         }
     }
+}

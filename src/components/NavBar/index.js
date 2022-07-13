@@ -9,7 +9,7 @@ import {
     ShoppingCartOutlined 
   } from "@ant-design/icons";
 
-const NavBarComponent = () => {
+const NavBarComponent = (props) => {
   const [colorChangeNav, setColorChangeNav] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -34,7 +34,9 @@ const NavBarComponent = () => {
   return (
     <section
       className={
-        colorChangeNav ? "navBgclr headerfullContainer" : "headerfullContainer"
+        colorChangeNav
+          ? "navBgclr headerfullContainer"
+          : "headerfullContainer"
       }
     >
       <div className="myContainer">

@@ -24,16 +24,16 @@ const ShopCardInner = (porps) => {
           <h4>{porps.product_Name}</h4>
         </div>
         <div className="productPrice">
-          <p>{porps.product_Price}</p>
+          <p>${porps.product_Price}</p>
           <div className="cardIcon">
             <div className="icon1">
               <Link to="../../containers/PageNotFound">
-                <ShoppingCartOutlined />
+                <ShoppingCartOutlined className="shopingCart" />
               </Link>
             </div>
             <div className="icon2">
               <Link to="../../containers/PageNotFound">
-                <HeartOutlined />
+                <HeartOutlined className="shopingCart" />
               </Link>
             </div>
           </div>

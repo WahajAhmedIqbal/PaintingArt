@@ -8,8 +8,18 @@
             width: 200px;
         }
         .footerIcon {
-          display: flex  
-        };
+            display: flex;
+            .icon1 a .facebookIcon {
+                font-size: 30px;
+                color: #000;
+                margin: 15px 10px;
+            }
+            .icon2 a .facebookIcon {
+                font-size: 30px;
+                color: #000;
+                margin: 15px 10px;
+            }
+        }
     }
     .footerContent {
         h5 {
@@ -17,6 +27,7 @@
             color: $color4;
             margin-bottom: 10px;
             font-size: 22px;
+            margin-top: 1rem;
         }
         p {
             margin: 0;
@@ -25,7 +36,7 @@
                 font-size: 13px;
             }
         }
-        
+
         .paymentbox {
             display: flex;
         }

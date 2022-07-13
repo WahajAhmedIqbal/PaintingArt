@@ -98,6 +98,7 @@ const AboutUsContainer = () => {
           </div>
         </div>
       </section>
+
       <FooterComponent />
     </div>
   );

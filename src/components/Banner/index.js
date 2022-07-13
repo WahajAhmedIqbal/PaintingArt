@@ -24,12 +24,6 @@ const BannerComponent = (props) => {
                 <span>{props.bannerText2}</span>
                 {props.bannerText3}
               </h3>
-              {/* <h3>
-                Painting is by
-                <span>Nature a luminous</span>
-                
-              </h3> */}
-
               <ButtonComponent
                 pageLink="../../containers/PageNotFound"
                 buttonText="Contact Now"

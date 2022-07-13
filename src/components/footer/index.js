@@ -2,7 +2,6 @@ import React from "react";
 
 import { Col, Row } from "antd";
 import { FacebookFilled, InstagramOutlined } from "@ant-design/icons";
-
 import { Link } from "react-router-dom";
 
 import FooterLogo from "../../assets/logo.png";
@@ -14,7 +13,7 @@ const FooterComponent = () => {
     <div className="footerContainer">
       <div className="myContainer">
         <Row>
-          <Col span={6} md>
+          <Col span={6} lg={6} md={12} sm={24} xs={24}>
             <div className="footerbox">
               <div className="footerLogo">
                 <Link to="/">
@@ -24,18 +23,19 @@ const FooterComponent = () => {
               <div className="footerIcon">
                 <div className="icon1">
                   <Link to="https://www.facebook.com/" target="_blank">
-                    <FacebookFilled />
+                    <FacebookFilled className="facebookIcon" />
+                    {/* <FontAwesomeIcon className="icon" icon={faCoffee} /> */}
                   </Link>
                 </div>
                 <div className="icon2">
                   <Link to="" target="_blank">
-                    <InstagramOutlined />
+                    <InstagramOutlined className="facebookIcon" />
                   </Link>
                 </div>
               </div>
             </div>
           </Col>
-          <Col span={6}>
+          <Col span={6} lg={6} md={12} sm={24} xs={24}>
             <div className="footerContent">
               <h5>Categories</h5>
               <p>
@@ -52,7 +52,7 @@ const FooterComponent = () => {
               </p>
             </div>
           </Col>
-          <Col span={6}>
+          <Col span={6} lg={6} md={12} sm={24} xs={24}>
             <div className="footerContent">
               <h5>Information</h5>
               <p>
@@ -66,7 +66,7 @@ const FooterComponent = () => {
               </p>
             </div>
           </Col>
-          <Col span={6}>
+          <Col span={6} lg={6} md={12} sm={24} xs={24}>
             <div className="footerContent">
               <h5>Payment Method</h5>
               <div className="paymentbox">
@@ -82,8 +82,8 @@ const FooterComponent = () => {
                   <img
                     src="https://designprosusa.com/themes/PaintingArt/assets/images/paypalIcon.png"
                     alt="Paypal"
-                    width='100%'
-                    height='100%'
+                    width="100%"
+                    height="100%"
                   />
                 </div>
               </div>
