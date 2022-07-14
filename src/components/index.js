@@ -7,6 +7,7 @@ import _ShopCompoenent from './Shop'
 import _BlogComponent from './Bolg'
 import _SubcribeComponent from './Subcribe'
 import _ShopCardInner from "./ShopCardInner";
+import _BlogCardComponent from "./BlogCard";
 import _FooterComponent from './footer'
 
 
@@ -20,3 +21,4 @@ export const FooterComponent = _FooterComponent
 export const BlogComponent = _BlogComponent;
 export const ShopCardInner = _ShopCardInner;
 export const SubcribeComponent = _SubcribeComponent;
+export const BlogCardComponent = _BlogCardComponent;

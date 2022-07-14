@@ -34,9 +34,7 @@ const NavBarComponent = (props) => {
   return (
     <section
       className={
-        colorChangeNav
-          ? "navBgclr headerfullContainer"
-          : "headerfullContainer"
+        colorChangeNav ? "navBgclr headerfullContainer" : "headerfullContainer"
       }
     >
       <div className="myContainer">
@@ -56,10 +54,10 @@ const NavBarComponent = (props) => {
               <Link to="/Shop">Shop</Link>
             </div>
             <div className="navItem">
-              <Link to="/">Blog</Link>
+              <Link to="/Blog">Blog</Link>
             </div>
             <div className="navItem">
-              <Link to="/">Contact Us</Link>
+              <Link to="/ContactUs">Contact Us</Link>
             </div>
             <div className="navItem">
               <Link to="/">

@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import { Row, Col } from 'antd'
+import { Row, Col } from "antd";
 
-import { ButtonComponent } from '../'
+import { ButtonComponent, BlogCardComponent } from "../";
 
-import './blogStyle.scss'
+import "./blogStyle.scss";
 
 const BlogComponent = () => {
-
   const blogCardsDetails = [
     {
       id: 1,
@@ -40,40 +39,29 @@ const BlogComponent = () => {
 
   return (
     <div className="blogContainer">
-      <img
-        className="bgimageblog"
-        src="https://designprosusa.com/themes/PaintingArt/assets/images/blogCover.png"
-        alt="bgImage"
-        width="100%"
-        height="100%"
-      />
+      <div className="blogBgContainer">
+        <img
+          className=""
+          src="https://designprosusa.com/themes/PaintingArt/assets/images/blogCover.png"
+          alt="bgImage"
+          width="100%"
+          height="100%"
+        />
+      </div>
       <div className="myContainer">
         <div className="blogHeading">
           <h1>Blog</h1>
         </div>
         <div className="blogCardsContainer">
-          <Row gutter={16}>
+          <Row gutter={20}>
             {blogCardsDetails.map((blog) => (
               <Col span={8} xl={8} lg={8} md={12} sm={12} xs={24} key={blog.id}>
-                <div className="blogCard">
-                  <div className="bolgCardImage">
-                    <img
-                      src={blog.image}
-                      alt="ProductImage"
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div className="blogCardContent">
-                    <h3>{blog.blog_Name}</h3>
-                    <h5>{blog.blog_date}</h5>
-                    <p>{blog.blog_blog}</p>
-                    <ButtonComponent
-                      pageLink="../../containers/PageNotFound"
-                      buttonText="Read More"
-                    />
-                  </div>
-                </div> 
+                <BlogCardComponent
+                  image={blog.image}
+                  blog_Name={blog.blog_Name}
+                  blog_date={blog.blog_date}
+                  blog_blog={blog.blog_blog}
+                />
               </Col>
             ))}
           </Row>
@@ -87,6 +75,6 @@ const BlogComponent = () => {
       </div>
     </div>
   );
-}
+};
 
-export default BlogComponent
+export default BlogComponent;
