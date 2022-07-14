@@ -1,9 +1,6 @@
 import React from 'react'
 
 import { Row, Col } from 'antd'
-import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
-
-import { Link } from 'react-router-dom'
 
 import { ButtonComponent } from '../'
 
