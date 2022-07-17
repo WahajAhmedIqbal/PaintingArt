@@ -11,6 +11,7 @@ import {
   ShopContainer,
   BlogContainer,
   ContactUsContainer,
+  WishlistContainer
 } from "../containers";
 
 const Routers = () => {
@@ -22,6 +23,7 @@ const Routers = () => {
           <Route path="/Shop" element={<ShopContainer />} />
           <Route path="/Blog" element={<BlogContainer />} />
           <Route path="/ContactUs" element={<ContactUsContainer />} />
+          <Route path='/wishList' element={<WishlistContainer />} />
           <Route path="*" element={<PageNotFoundContainer />} />
         </Routes>
       </BrowserRouter>

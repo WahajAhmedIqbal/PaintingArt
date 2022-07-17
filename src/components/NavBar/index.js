@@ -60,7 +60,7 @@ const NavBarComponent = (props) => {
               <Link to="/ContactUs">Contact Us</Link>
             </div>
             <div className="navItem">
-              <Link to="/">
+              <Link to="/wishList">
                 <HeartOutlined />
               </Link>
             </div>
