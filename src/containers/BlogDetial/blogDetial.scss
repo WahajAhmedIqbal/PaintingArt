@@ -1,0 +1,35 @@
+@import '../../commonStyle/Style.scss';
+
+.blogDetialsCard {
+    padding-top: 9rem;
+
+    .detailiBlogimg {
+        width: 100%;
+        height: 530px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .blogDetails {
+        h3 {
+            color: $color2;
+            font-family: 'Montserrat-Regular';
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        h6 {
+            color: $color2;
+            font-family: Montserrat-Regular;
+            font-size: 25px;
+        }
+
+        p {
+            color: $color4;
+            font-family: Montserrat-Light;
+            font-size: 16px;
+        }
+    }
+}

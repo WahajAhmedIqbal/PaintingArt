@@ -1,0 +1,11 @@
+@import "../../commonStyle/Style.scss";
+
+.wishlistHeading {
+    padding-top: 8rem;
+    h2 {
+        font-family: Granite;
+        font-size: 45px;
+        color: $color2;
+        text-align: center;
+    }
+}

@@ -119,6 +119,7 @@ const BlogContainer = () => {
                   blog_Name={blog.blog_Name}
                   blog_date={blog.blog_date}
                   blog_blog={blog.blog_blog}
+                  blog_details_link='/blog/blogDetails'
                 />
               </Col>
             ))}

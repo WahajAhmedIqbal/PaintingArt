@@ -76,6 +76,12 @@ const WishlistContainer = () => {
         <div>
             <NavBarComponent />
 
+            <div className="wishlistHeading">
+                <h2>
+                    Wishlist
+                </h2>
+            </div>
+
             <div className="myContainer">
                 <Row gutter={20}>
                     {cardsDetails.map((item) => (
