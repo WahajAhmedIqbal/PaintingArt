@@ -6,6 +6,7 @@ import _BlogContainer from "./Blog";
 import _ContactUsContainer from "./ContactUs";
 import _WishlistContainer from './Wishlist'
 import _BlogDetailsContainer from "./BlogDetial";
+import _ProductContainer from "./Product";
 
 export const HomeContainer = _HomeContainer
 export const PageNotFoundContainer = _PageNotFoundContainer
@@ -15,3 +16,4 @@ export const BlogContainer = _BlogContainer;
 export const ContactUsContainer = _ContactUsContainer
 export const WishlistContainer = _WishlistContainer
 export const BlogDetailsContainer = _BlogDetailsContainer
+export const ProductContainer = _ProductContainer;

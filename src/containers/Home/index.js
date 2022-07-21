@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   NavBarComponent,
   BannerComponent,
@@ -13,6 +13,9 @@ import {
 import './homeStyle.scss'
 
 const HomeContainer = () => {
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
   return (
     <div>
       <NavBarComponent />
@@ -24,6 +27,7 @@ const HomeContainer = () => {
         bannerSlide2="https://designprosusa.com/themes/PaintingArt/assets/images/homeTwo.png"
         bannerSlide3="https://designprosusa.com/themes/PaintingArt/assets/images/homeThree.png"
         bannerSlide4="https://designprosusa.com/themes/PaintingArt/assets/images/homeFour.png"
+        buttonCheck="true"
       />
       <CategoriesCompoenet />
       <AboutUsComponent />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   NavBarComponent,
@@ -10,6 +10,9 @@ import {
 import "./ContactUsStyle.scss";
 
 const ContactUsContainer = () => {
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
   return (
     <div>
       <NavBarComponent />

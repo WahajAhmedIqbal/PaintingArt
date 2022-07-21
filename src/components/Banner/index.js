@@ -24,10 +24,8 @@ const BannerComponent = (props) => {
                 <span>{props.bannerText2}</span>
                 {props.bannerText3}
               </h3>
-              <ButtonComponent
-                pageLink="../../containers/PageNotFound"
-                buttonText="Contact Now"
-              />
+              {props.buttonCheck ? <ButtonComponent pageLink="/ContactUs" buttonText="Contact Now" /> : "" }
+              
             </div>
           </Col>
           <Col span={14} xl={14} lg={14} md={14} sm={4} xs={4}>

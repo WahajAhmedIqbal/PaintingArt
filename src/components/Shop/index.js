@@ -58,7 +58,7 @@ const ShopCompoenent = () => {
         </Row>
         <div className="showNowButton">
           <ButtonComponent
-            pageLink="../../containers/PageNotFound"
+            pageLink="/Shop"
             buttonText="Shop Now"
           />
         </div>

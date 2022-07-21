@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Col, Row } from "antd";
 
@@ -12,6 +12,10 @@ import {
 import "./shopStyle.scss";
 
 const ShopContainer = () => {
+
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
 
    const cardsDetails = [
      {

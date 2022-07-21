@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
 import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 
 import { Link } from "react-router-dom";
 
-import './shopCardInnerStyle.scss'
+import "./shopCardInnerStyle.scss";
 
 const ShopCardInner = (porps) => {
   return (
     <div className="shopCardContainer">
       <div className="cardImage">
-        <Link to="../../containers/PageNotFound">
+        <Link to="/Shop/product">
           <img
             src={porps.image}
             alt="ProductImage"
@@ -41,6 +41,6 @@ const ShopCardInner = (porps) => {
       </div>
     </div>
   );
-}
+};
 
-export default ShopCardInner
+export default ShopCardInner;

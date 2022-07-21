@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Col, Row } from "antd";
 
 import {
     NavBarComponent,
-    BannerComponent,
     BlogCardComponent,
     FooterComponent,
 } from "../../components";
@@ -12,6 +11,9 @@ import {
 import "./blogDetial.scss";
 
 const BlogDetailsContainer = () => {
+     useEffect(() => {
+       window.scrollTo(0, 0);
+     }, []);
     const blogCardsDetails = [
         {
             id: 1,
