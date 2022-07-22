@@ -52,13 +52,13 @@ const ProductContainer = () => {
                 </div>
                 <div className="productConter">
                   <div className="productMinus">
-                    <label htmlFor="">-</label>
+                    <button>-</button>
                   </div>
                   <div className="productCount">
                     <input type="text" />
                   </div>
                   <div className="productPlus">
-                    <label htmlFor="">+</label>
+                    <button>+</button>
                   </div>
                 </div>
                 <ButtonComponent pageLink="" buttonText="Add To Cart" />
@@ -75,9 +75,33 @@ const ProductContainer = () => {
         </div>
       </div>
 
+      <div className="myContainer">
+        <Row>
+          <Col span={12} lg={12} sm={24} xs={24}>
+            <div className="reviewSection">
+              <div className="reviewerImagebox">
+                <img
+                  src="https://designprosusa.com/themes/PaintingArt/assets/images/profileImage.png"
+                  alt="reviewerImage"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div className="reviewerDetails">
+                <h4>Wahaj</h4>
+                <div className="reviewRating">rating</div>
+                <input type="text" />
+
+                <button>Send</button>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </div>
+
       <FooterComponent />
     </div>
   );
 };
 
-export default ProductContainer;
+export default ProductContainer; 
