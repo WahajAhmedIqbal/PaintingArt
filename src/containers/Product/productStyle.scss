@@ -39,13 +39,62 @@
     display: flex;
     width: 100%;
     height: 175px;
-    padding: 10px;
-    // box-shadow: 6px 7px 19px -1px rgb(48 48 51);
+    padding: 10px 15px 10px 15px;
+    box-shadow: 6px 7px 19px -1px;
     border-radius: 8px;
-    background-color: #caf4ff;
+    background-color: $color1;
     margin: 40px 0;
+
     .reviewerImagebox {
         width: 100px;
         height: 100px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .reviewerDetails {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        h4 {
+            font-family: Montserrat-Bold;
+            font-size: 20px;
+            color: $color2;
+            margin-bottom: 0;
+        }
+        input {
+            background-color: $color1;
+            border: none;
+            outline: none;
+            margin-top: 10px;
+            margin-bottom: 16px;
+            width: 95%;
+            font-size: 16px;
+            font-family: Montserrat-Regular;
+            border-bottom: 2px solid $color2;
+            padding-bottom: 8px;
+        }
+        button {
+            border: none;
+            padding: 4px 15px;
+            color: #ffffff;
+            font-size: 14px;
+            background-color: $color2;
+            border-radius: 4px;
+            font-family: Montserrat-Regular;
+            outline: none;
+            transition: 0.5s all ease-in-out;
+            width: 70px;
+        }
+    }
+}
+
+.sliderContainer {
+    margin: 2rem 0;
+    .sliderHeading h3 {
+        font-family: Granite;
+        font-size: 40px;
+        color: $color2;
+        text-align: center;
     }
 }

@@ -13,11 +13,20 @@
                 font-size: 30px;
                 color: #000;
                 margin: 15px 10px;
+                transition: .5s all ease-in-out;
             }
             .icon2 a .facebookIcon {
                 font-size: 30px;
                 color: #000;
                 margin: 15px 10px;
+                transition: .5s all ease-in-out;
+
+            }
+            .icon1:hover a .facebookIcon {
+                color: $color2;
+            }
+            .icon2:hover  a .facebookIcon {
+                color: $color2;
             }
         }
     }

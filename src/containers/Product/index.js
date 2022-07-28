@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { Col, Row } from "antd";
 
 import Select from "react-select";
+// slick slider
+import Slider from "react-slick";
 
 import {
   NavBarComponent,
@@ -20,6 +22,15 @@ const ProductContainer = () => {
     { value: "strawberry", label: "Strawberry" },
     { value: "vanilla", label: "Vanilla" },
   ];
+
+  const settings = {
+    // dots: true,
+    autoplay : true,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
 
   return (
     <div>
@@ -50,7 +61,7 @@ const ProductContainer = () => {
                     options={options}
                   />
                 </div>
-                <div className="productConter">
+                {/* <div className="productConter">
                   <div className="productMinus">
                     <button>-</button>
                   </div>
@@ -60,7 +71,7 @@ const ProductContainer = () => {
                   <div className="productPlus">
                     <button>+</button>
                   </div>
-                </div>
+                </div> */}
                 <ButtonComponent pageLink="" buttonText="Add To Cart" />
 
                 <h3>Descriptions</h3>
@@ -90,7 +101,7 @@ const ProductContainer = () => {
               <div className="reviewerDetails">
                 <h4>Wahaj</h4>
                 <div className="reviewRating">rating</div>
-                <input type="text" />
+                <input type="text" placeholder="Write a Review" />
 
                 <button>Send</button>
               </div>
@@ -99,9 +110,75 @@ const ProductContainer = () => {
         </Row>
       </div>
 
+      <div className="myContainer">
+        <div className="sliderContainer">
+          <div className="sliderHeading">
+            <h3>Related Products</h3>
+          </div>
+          <Slider {...settings}>
+            <div className="sliderImageBox">
+              <img
+                src="https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png"
+                alt="ProductImage"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="sliderImageBox">
+              <img
+                src="https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png"
+                alt="ProductImage"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="sliderImageBox">
+              <img
+                src="https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png"
+                alt="ProductImage"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="sliderImageBox">
+              <img
+                src="https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png"
+                alt="ProductImage"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="sliderImageBox">
+              <img
+                src="https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png"
+                alt="ProductImage"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="sliderImageBox">
+              <img
+                src="https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png"
+                alt="ProductImage"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="sliderImageBox">
+              <img
+                src="https://designprosusa.com/themes/PaintingArt/assets/images/blogThree.png"
+                alt="ProductImage"
+                width="100%"
+                height="100%"
+              />
+            </div>
+          </Slider>
+        </div>
+      </div>
+
       <FooterComponent />
     </div>
   );
 };
 
-export default ProductContainer; 
+export default ProductContainer;
